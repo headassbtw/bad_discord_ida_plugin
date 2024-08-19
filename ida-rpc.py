@@ -30,6 +30,10 @@ def long_arch(arch):
         return "ARM"
     if comp == "armb":
         return "ARM (Big-Endian)"
+    if comp == "ia64b":
+        return "Itanium (Big-Endian)"
+    if comp == "ia64l":
+        return "Itanium (Little-Endian)"
     else:
         return arch
 def img_arch(arch):
@@ -40,6 +44,8 @@ def img_arch(arch):
         return "x86"
     if comp == "r5900l" or comp == "r5900b" or comp == "psp" or comp == "mipsl" or comp == "mipsb":
         return "mips"
+    if comp == "ia64b" or comp == "ia64l":
+        return "itanium"
     if comp == "arm" or comp == "armb":
         return "arm"
 
