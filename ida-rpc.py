@@ -1,0 +1,1 @@
+/opt/ida-pro/plugins/ida-rpc.py
